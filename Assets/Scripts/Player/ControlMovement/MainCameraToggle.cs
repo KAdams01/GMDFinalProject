@@ -15,6 +15,8 @@ public class MainCameraToggle : MonoBehaviour
     {
         cam = GetComponent<Camera>();
         numberInTransformArray = 0;
+        cam.transform.position = transforms[numberInTransformArray].position;
+        cam.transform.rotation = transforms[numberInTransformArray].rotation;
     }
     private void Update()
     {

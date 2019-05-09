@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BD43D28F-1540-6BDE-6CF9-180AA3CF1FD8}</ProjectGuid>
+    <ProjectGuid>{C2FC29F0-0226-DB07-348B-C53CA313183B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,12 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Level\Chunk.cs" />
+    <Compile Include="Assets\Scripts\Level\2D\PolygonGenerator.cs" />
+    <Compile Include="Assets\Scripts\Level\3D\Chunk.cs" />
+    <Compile Include="Assets\Scripts\Level\3D\DayNightCycle.cs" />
+    <Compile Include="Assets\Scripts\Level\3D\World.cs" />
     <Compile Include="Assets\Scripts\Level\Noise.cs" />
-    <Compile Include="Assets\Scripts\Level\PolygonGenerator.cs" />
-    <Compile Include="Assets\Scripts\Level\World.cs" />
     <Compile Include="Assets\Scripts\Player\ControlMovement\AngleClamper.cs" />
     <Compile Include="Assets\Scripts\Player\ControlMovement\CursorLock.cs" />
+    <Compile Include="Assets\Scripts\Player\ControlMovement\HittingAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\ControlMovement\IMovement.cs" />
     <Compile Include="Assets\Scripts\Player\ControlMovement\InputHandler.cs" />
     <Compile Include="Assets\Scripts\Player\ControlMovement\JumpSmoother.cs" />
@@ -79,51 +81,51 @@
     <Compile Include="Assets\Scripts\Player\Inventory\InventoryInput.cs" />
     <Compile Include="Assets\Scripts\Player\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Player\Inventory\InventorySpot.cs" />
-    <Compile Include="Assets\Scripts\Utility\BlockPlaceExample.cs" />
-    <Compile Include="Assets\Scripts\Utility\ColliderExample.cs" />
-    <Compile Include="Assets\Scripts\Utility\ModifyTerrain.cs" />
-    <Compile Include="Assets\Scripts\Utility\RaycastExample.cs" />
+    <Compile Include="Assets\Scripts\Utility\2D\BlockPlaceExample.cs" />
+    <Compile Include="Assets\Scripts\Utility\2D\ColliderExample.cs" />
+    <Compile Include="Assets\Scripts\Utility\2D\RaycastExample.cs" />
+    <Compile Include="Assets\Scripts\Utility\3D\ModifyTerrain.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -309,13 +311,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/Kevin/Documents/MinecraftTutorial/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Kevin/Documents/GMDFinalProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
